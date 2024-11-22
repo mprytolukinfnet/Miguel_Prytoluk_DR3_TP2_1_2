@@ -8,6 +8,7 @@ Este aplicativo utiliza o modelo Helsinki-NLP/opus-mt-en-fr da HuggingFace para 
 ```bash
 pip install -r requirements.txt
 ```
+3. Instalar Pytorch: https://pytorch.org/get-started/locally/
 
 **Como Executar**: Inicie o servidor FastAPI com o comando:
 ```bash

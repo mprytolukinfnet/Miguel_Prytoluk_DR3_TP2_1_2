@@ -20,12 +20,3 @@ translator = pipeline("translation_en_to_fr", model="Helsinki-NLP/opus-mt-en-fr"
 async def translate_text(input: TextInput):
     translated = translator(input.text)
     return {"input": input.text, "translation": translated[0]['translation_text']}
-
-"""
-Necessário Instalar Pytorch: https://pytorch.org/get-started/locally/
-
-Executar com
-curl -X POST "http://127.0.0.1:8000/translate/" \
--H "Content-Type: application/json" \
--d '{"text": "I am a Data Scientist and work with machine learning models on a daily basis."}'
-"""
